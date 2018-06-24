@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ActivityEditar"
+    android:padding="15dp"
+    android:id="@+id/edit_layout"
+    android:orientation="vertical"
+    android:background="#87ceeb">
+
+
+
+    <TextView
+        android:id="@+id/nomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dp"
+
+        android:gravity="center_horizontal"
+        android:text="WHAT"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeImage"
+        android:text="Informações da Estação: "
+        android:id="@+id/info_tv"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_tv"
+        android:hint="Informações da Estação"
+        android:id="@+id/info_et"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/acomodacoes_tv"
+        android:text="Acomodações da Estação:"
+        android:textColor="#000"
+        android:layout_below="@+id/info_et"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/acomodacoes_et"
+        android:hint="Acomodações da Estação"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_below="@+id/acomodacoes_tv"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/endereco_tv"
+        android:textColor="#000"
+        android:text="Endereço da Estação: "
+        android:layout_below="@+id/acomodacoes_et"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/endereco_et"
+        android:textColor="#000"
+        android:hint="Endereço da Estação"
+        android:layout_below="@+id/endereco_tv"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Horário de Funcionamento da Estação: "
+        android:id="@+id/horario_tv"
+        android:layout_below="@+id/endereco_et"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horatio_et"
+        android:layout_below="@+id/horario_tv"
+        android:hint="Horaário de Funcionamneto da Estação"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="14sp"/>
+
+
+
+</RelativeLayout>
