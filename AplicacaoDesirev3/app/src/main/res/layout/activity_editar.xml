@@ -108,10 +108,28 @@
         android:layout_height="wrap_content"
         android:id="@+id/horatio_et"
         android:layout_below="@+id/horario_tv"
-        android:hint="Horaário de Funcionamneto da Estação"
+        android:hint="Horário de Funcionamneto da Estação"
         android:gravity="center_horizontal"
         android:textColor="#000"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapa_tv"
+        android:layout_below="@+id/horatio_et"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Mapa da Estação"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapa_tv"
+        android:id="@+id/mapa_img"/>
 
 
 

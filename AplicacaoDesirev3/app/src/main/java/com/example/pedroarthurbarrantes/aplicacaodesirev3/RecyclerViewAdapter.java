@@ -49,15 +49,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         holder.imageName.setText(mImageNames.get(position));
 
-        holder.imageName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(mContext, mImageNames.get(position), Toast.LENGTH_SHORT).show();
 
-            }
-        });
 
-        holder.image.setOnClickListener(new View.OnClickListener() {
+        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(mContext.getApplicationContext(),ActivityEditar.class);

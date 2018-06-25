@@ -93,5 +93,15 @@ public class DatabaseAccess {
         return buffer.toString();
     }
 
+    public String getMap(String map){
+        c=db.rawQuery("SELECT map from tb_rV where nome='" + map + "'",null);
+        StringBuffer buffer = new StringBuffer();
+        while (c.moveToNext()){
+            String mapa = c.getString(0);
+            buffer.append(""+mapa);
+        }
+        return buffer.toString();
+    }
+
 
 }
